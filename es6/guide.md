@@ -1,11 +1,5 @@
 #ES6 Guide
 
-* Whitespace
-* Types 
-* Strings
-* ES6 Features
-* Conditions 
-
 
 ##Whitespace 
  
@@ -180,6 +174,26 @@ element.on('click', ({ altKey, bubbles }) => console.log(altKey, bubbles));
 ```javascript
 const arr = [1, 2, 3, 4];
 const [first, second] = arr;
+```
+
+- Function Parameter destructuring 
+
+```javascript 
+// Lets say you get a dom event
+function foo({ target }) {
+  console.log('event.target', target);
+}
+```
+- Renaming 
+
+```javascript 
+const person = {userId: 989};
+const { userId: id } = person;
+console.log(id);
+
+function findUser({ userId: id }) {
+  return this.lookFor('User', {id: id});
+}
 ```
 
 ## Strings
