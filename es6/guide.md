@@ -234,7 +234,7 @@ const foo = function foo() {
 }());
 ```
 
-- Use rest rest shorthand instead of arguments array
+- Use rest shorthand instead of arguments array
 
 ```javascript 
 function concatenate(...args) {
@@ -247,6 +247,22 @@ function concatenate(...args) {
 ```javascript 
 function handleStuff(name, opts = {}) {
   // ...
+}
+```
+
+- Long Functions , leave a linebreak between declaration, body and return.
+
+```javascript 
+function foo(id) {
+  const limit = 102;
+  
+  if ( id < limit) {
+    // do something
+  } else {
+    // otherwise do this 
+  }
+  
+  return something;
 }
 ```
 ### Arrow Functions 
