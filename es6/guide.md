@@ -587,9 +587,9 @@ const url = age > 18 ? (
 
 ```javascript 
 //avoid this, it's hard to read
-if ( _.find( list, function (item) {
+if (_.find(list, function (item) {
   return compare(item.something, external);
-} ) ) {
+})) {
     // Do stuff
 }
 
@@ -599,6 +599,6 @@ var found = _.find(list, function (item) {
 });
 
 // Simple conditions
-if ( found ) {
-    // do stuff
+if (found) {
+  // do stuff
 } 
