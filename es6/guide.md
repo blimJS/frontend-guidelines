@@ -160,6 +160,21 @@ array.filter((item) => {
 const { name, lastname } = person;
 const label = `${ name } - ${ lastname }`; // => John Lopez
 ```
+
+- Object destrucuring property with hyphen only for more than two references, otherwise use dot notation
+
+```javascript
+const header = {
+  'accept-ranges': 'bytes',
+  'cache-control': 'public, max-age=0',
+  'content-length': '1174',
+  'content-type': 'application/json'
+};
+
+const { 'content-length': contentLength, 'content-type': contentType } = header;
+```
+
+
 - Destructuring in functions 
 
 ```javascript
